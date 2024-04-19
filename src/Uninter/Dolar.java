@@ -15,4 +15,17 @@ public class Dolar extends Moeda {
         return this.valor * 5.38;
 
     }
+    @Override
+    public boolean equals(Object obj) {
+        if (this.getClass() != obj.getClass()) {
+            return false;
+        }
+
+        Dolar objDeDolar = (Dolar) obj;
+
+        if (this.valor != objDeDolar.valor) {
+            return false;
+        }
+        return true;
+    }
 }

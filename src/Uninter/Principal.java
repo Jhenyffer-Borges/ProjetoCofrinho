@@ -8,7 +8,7 @@ public class Principal {
         //Criando a variável entrada para exibir o Menu de Entrada
         Entrada entrada = new Entrada();
         entrada.exibirMenuEntrada();
-
+        //Criando variável cofrinho
         Cofrinho cofrinho = new Cofrinho();
         cofrinho.listagemMoedas();
     }

@@ -9,7 +9,9 @@
       <change beforePath="$PROJECT_DIR$/src/Uninter/Cofrinho.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Uninter/Cofrinho.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Uninter/Dolar.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Uninter/Dolar.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Uninter/Entrada.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Uninter/Entrada.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Uninter/Euro.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Uninter/Euro.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Uninter/Principal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Uninter/Principal.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Uninter/Real.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Uninter/Real.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -81,7 +83,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1713459266279</updated>
-      <workItem from="1713459267399" duration="28321000" />
+      <workItem from="1713459267399" duration="32093000" />
     </task>
     <task id="LOCAL-00001" summary="Salvando arquivos">
       <option name="closed" value="true" />
@@ -91,7 +93,15 @@
       <option name="project" value="LOCAL" />
       <updated>1713555547160</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Salvando arquivos">
+      <option name="closed" value="true" />
+      <created>1713565219390</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1713565219392</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -111,16 +121,5 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Salvando arquivos" />
     <option name="LAST_COMMIT_MESSAGE" value="Salvando arquivos" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/Uninter/Cofrinho.java</url>
-          <line>42</line>
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>
