@@ -7,7 +7,7 @@ public class Principal {
     public static void main(String[] args) {
         //Criando a variável entrada para exibir o Menu de Entrada
         Entrada entrada = new Entrada();
-        entrada.exibirMEnuEntrada();
+        entrada.exibirMenuEntrada();
 
         Cofrinho cofrinho = new Cofrinho();
         cofrinho.listagemMoedas();

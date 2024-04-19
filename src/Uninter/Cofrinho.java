@@ -13,13 +13,31 @@ public class Cofrinho {
     public void adicionar(Moeda moeda) {
         this.listaMoedas.add(moeda);
     }
-    public void listagemMoedas () {
+    public void listagemMoedas() {
 
-        //if (this.listaMoedas.isEmpty()){
-           //System.out.println("ta liso");
-            return;
-        /* } */
+       if (this.listaMoedas.isEmpty()) {
+           System.out.println("Não há moedas no cofrinho!");
+           return;
+        }
+
+       for (Moeda moeda : this.listaMoedas){
+           moeda.info();
+       }
 
     }
 
+    public double totalConvertido() {
+        if (this.listaMoedas.isEmpty()) {
+            return 0;
+        }
+        double valorAcumulado = 0;
+
+        for (Moeda moeda : this.listaMoedas) {
+            valorAcumulado = valorAcumulado + moeda.converter();
+
+        }
+
+        return valorAcumulado;
+
+    }
 }

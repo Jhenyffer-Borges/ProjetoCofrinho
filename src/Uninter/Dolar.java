@@ -7,7 +7,7 @@ public class Dolar extends Moeda {
     }
     @Override
     public void info() {
-        System.out.println("Dolar - " + valor);
+        System.out.println("Dólar - " + valor);
     }
 
     @Override //Utilizando o metodo converter para que não precise multiplicar a moeda, o metodo já identifica o valor que inseri retornando usando o this.valor para identificar e mostrar para o usuario o valor em real que ele possui
