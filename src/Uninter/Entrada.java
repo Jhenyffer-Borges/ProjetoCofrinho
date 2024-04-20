@@ -5,11 +5,11 @@ import java.util.Scanner;
 public class Entrada {
 
     private Scanner scan;
-    private Cofrinho cofrinho;
+    private Cofrinho cofrinho; //Instancia de cofrinho para operar o menu
     //Criando um construtor da classe Entrada, sem receber nenhum parametro
     public Entrada() {
     scan = new Scanner(System.in); //Para receber informações do usuário
-    cofrinho = new Cofrinho();
+    this.cofrinho = new Cofrinho();
     }
     public void exibirMenuEntrada() {
         //Criando um menu de Entrada
@@ -22,7 +22,7 @@ public class Entrada {
 
         String escolhido =  scan.next(); //criando uma variável para aparecer a opção escolhida do usuário, guardando valor.
         System.out.println(escolhido);
-
+        // Iniciando o bloco Switch para iniciar a ação com base na escolha do usuário.
         switch (escolhido) {
             case "0":
                 System.out.println("Sistema Encerrado");
@@ -44,10 +44,10 @@ public class Entrada {
                 break;
 
             case "4":
-                double valorTotalConvertido = cofrinho.totalConvertido();
-                String valorTotalConvertidoTxt = String.format("%.2f", valorTotalConvertido);
-                valorTotalConvertidoTxt = valorTotalConvertidoTxt.replace(".", ",");
-                System.out.println("Total convertido para real: " + valorTotalConvertidoTxt);
+                double valorTotalConvertido = cofrinho.totalConvertido(); //Calcula valor total convertido para Real
+                String valorTotalConvertidoTxt = String.format("%.2f", valorTotalConvertido); // Formata para ser exibido com aprnas duas casas decimais
+                valorTotalConvertidoTxt = valorTotalConvertidoTxt.replace(".", ","); //Substitui ponto por vírgula
+                System.out.println("Total convertido para real: " + valorTotalConvertidoTxt); // Exibi o valor total convertido
                 exibirMenuEntrada();
                 break;
 
@@ -86,9 +86,10 @@ public class Entrada {
 
         cofrinho.adicionar(moeda);
         System.out.println("Moeda adicionada com sucesso!");
-        System.out.println("Valor da moeda Adicionada: " + moeda.converter());
+        System.out.println("Valor da moeda Adicionada, convertida para REAL: " + moeda.converter());
 
     }
+    //Método para exibir submenu de remoção de moedas
     private void exibirSubmenuRemoverMoedas() {
         System.out.println("Escolha uma moeda:");
         System.out.println("1 - Real:");
@@ -99,6 +100,7 @@ public class Entrada {
         System.out.println("Digite o Valor: ");
         String valorTxtMoeda = scan.next();
         valorTxtMoeda = valorTxtMoeda.replace(",", ".");
+        System.out.println("Moeda Removida com Sucesso!");
 
         double valorMoeda = Double.parseDouble(valorTxtMoeda);
 

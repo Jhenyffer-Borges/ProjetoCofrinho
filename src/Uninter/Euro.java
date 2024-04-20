@@ -2,7 +2,7 @@ package Uninter;
 
 public class Euro extends Moeda {
 
-    public Euro(double valorIni) {//construtor do Dolar
+    public Euro(double valorIni) {
         this.valor = valorIni;
     }
     @Override

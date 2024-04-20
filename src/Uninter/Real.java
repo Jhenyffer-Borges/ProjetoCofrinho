@@ -1,6 +1,5 @@
 package Uninter;
 
-import java.sql.SQLOutput;
 
 public class Real extends Moeda {
 

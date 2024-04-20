@@ -1,31 +1,32 @@
 package Uninter;
 
 public class Dolar extends Moeda {
-
-    public Dolar(double valorIni) {//construtor do Dolar
+    public Dolar(double valorIni) {
         this.valor = valorIni;
     }
+
     @Override
     public void info() {
-        System.out.println("Dólar - " + valor);
+        // Mostra a informação sobre o dólar no console
+        System.out.println("Dólar - " + valor);  // Exibe o tipo da moeda e seu valor
     }
 
-    @Override //Utilizando o metodo converter para que não precise multiplicar a moeda, o metodo já identifica o valor que inseri retornando usando o this.valor para identificar e mostrar para o usuario o valor em real que ele possui
+    @Override
     public double converter() {
         return this.valor * 5.38;
-
     }
+
     @Override
     public boolean equals(Object obj) {
+        // Verifica se o objeto passado é da mesma classe
         if (this.getClass() != obj.getClass()) {
-            return false;
+            return false;  // Se não for da mesma classe, retorna false
         }
 
-        Dolar objDeDolar = (Dolar) obj;
+        // Faz o casting para a classe Dolar
+        Dolar objDeDolar = (Dolar) obj;  // Converte o objeto para o tipo Dolar
 
-        if (this.valor != objDeDolar.valor) {
-            return false;
-        }
-        return true;
+        // Compara os valores para determinar se são iguais
+        return this.valor == objDeDolar.valor;  // Retorna true se os valores forem iguais, senão retorna false
     }
 }
